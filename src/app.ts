@@ -11,8 +11,9 @@ class GridAppElement extends LitElement {
 
     .grid-container {
       display: grid;
-      grid-template-columns: 100px 100px;
+      grid-template-columns: repeat(auto-fit, minmax(308px, 308px));
       gap: 2rem;
+      justify-content: space-around;
     }
   `
 
@@ -23,6 +24,13 @@ class GridAppElement extends LitElement {
       <grid-block text="three"></grid-block>
       <grid-block text="four"></grid-block>
       <grid-block text="five"></grid-block>
+      <grid-block text="six"></grid-block>
+      <grid-block text="seven"></grid-block>
+      <grid-block text="eight"></grid-block>
+      <grid-block text="nine"></grid-block>
+      <grid-block text="ten"></grid-block>
+      <grid-block text="eleven"></grid-block>
+      <grid-block text="twelve"></grid-block>
     </div> `
   }
 }
